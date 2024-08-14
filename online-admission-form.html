@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <title>online Admission Form | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Theme Config Js -->
+        <script src="assets/js/hyper-config.js"></script>
+
+        <!-- App css -->
+        <link href="assets/css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style" />
+
+        <!-- Icons css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />        
+
+    </head>
+
+    <body>
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg py-lg-1 navbar-light"style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="container-fluid  col-sm-8 ">
+
+                <!-- logo -->
+                <a href="index.html" class="navbar-brand ">
+                    <img src="assets/images/logo.png" alt="logo" class="logo-dark" height="80" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+                <!-- menus -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- left menu -->
+                    <ul class="navbar-nav me-auto align-items-center fw-bolder fs-4">
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link active" href="admission-intruction.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="online-admission-form.html">Apply</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="member-home.html">Member-Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="login-member.html">Login Member</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                
+                    <!-- right menu -->
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item ">
+                            <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/" target="_blank" class="nav-link d-lg-none">Purchase now</a>
+                            <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/" target="_blank" class="btn btn-sm btn btn-primary rounded-pill d-none d-lg-inline-flex">
+                                <i class=" me-auto"></i>Online Admission
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+            <!-- Start Content-->
+            <div class="container-fluid col-sm-9 mt-10">
+
+                    <div class="col-xl-12">
+                        <div class="card mt-2">
+                            <div class="card-body container-fluid ">
+
+                                             <h3 class="mb-3 text-light text-center bg-deep-danger py-3" style="margin-top: -20px;">Online Admission Form</h3>
+
+                                    <div id="rootwizard" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+                                        <ul class="nav nav-pills nav-justified form-wizard-header mb-3 px-3">
+                                            <li class="nav-item" data-target-form="#accountForm">
+                                                <a href="#first" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2">
+                                                    <i class="mdi mdi-account-circle font-18 align-middle me-1"></i>
+                                                    <span class="d-none d-sm-inline">Basic Info</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" data-target-form="#profileForm">
+                                                <a href="#second" data-bs-toggle="tab" data-toggle="tab"  class="nav-link rounded-0 py-2">
+                                                    <i class="mdi mdi-face-man-profile font-18 align-middle me-1"></i>
+                                                    <span class="d-none d-sm-inline">Your Info</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" data-target-form="#adressForm">
+                                                <a href="#third" data-bs-toggle="tab" data-toggle="tab"  class="nav-link rounded-0 py-2">
+                                                    <i class=" ri-user-2-fill font-18 align-middle me-1"></i>
+                                                    <span class="d-none d-sm-inline">Guardian Info</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" data-target-form="#otherForm">
+                                                <a href="#fourth" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2">
+                                                    <i class="ri-image-add-line font-18 align-middle me-1"></i>
+                                                    <span class="d-none d-sm-inline">Image</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" data-target-form="#preview">
+                                                <a href="#five" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2">
+                                                    <i class="mdi mdi-checkbox-marked-circle-outline font-18 align-middle me-1"></i>
+                                                    <span class="d-none d-sm-inline">Preview</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="tab-content mb-0 b-0">
+
+                                            <div class="tab-pane" id="first">
+                                                <form id="accountForm" method="post" action="#" class="form-horizontal">
+                                                    <div class="row">
+                                                        <div class="col-12 px-3">
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="className">Class Name <span class="required-indicator text-danger">*</span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control auto-select-dropdown"required id="className" name="className" tabindex="2">
+                                                                        <option value="">Select Class</option>
+                                                                        <option value="3">Pre-Nursery</option>
+                                                                        <option value="3">One</option>
+                                                                        <option value="3">Two-Nursery</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="name">Student Name <span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    
+                                                                    <input type="text" placeholder="Student Full Name" value="" id="name" name="name" class="form-control"required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label" for="nameBangla">ছাত্র/ছাত্রীর নাম (বাংলা)  <span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    
+                                                                    <input type="text" placeholder="নাম (বাংলা)" id="nameBangla" name="nameBangla" value="" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="fathersName">Father Name <span class="required-indicator text-danger">* </span></label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Father Name" value="" id="fathersName" name="fathersName" class="form-control"required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="mothersName">Mother Name <span class="required-indicator text-danger">* </span></label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Father Name" value="" id="mothersName" name="mothersName" class="form-control"required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="mobile">Mobile No <span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    <input type="number" placeholder="Mobile Number" value="" id="mobile" name="mobile" class="form-control" required >
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="birthDate">Birth Date<span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Birth Date" value="" id="birthDate" name="birthDate" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                    </div> <!-- end row -->
+                                                </form>
+
+                                                <ul class="pager wizard mt-3 list-inline">
+                                                    <li class="previous list-inline-item">
+                                                        
+                                                    </li>
+                                                    <li class="next list-inline-item float-end mb-2" style="margin-top: -17px;">
+                                                        <button type="button" class="btn btn-info">Add More Info <i class="mdi mdi-arrow-right ms-1"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="second">
+                                                <form id="profileForm" method="post" action="#" class="form-horizontal">
+                                                    <div class="row">
+                                                        <div class="col-12 px-3">
+                                                            
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="className">Religion <span class="required-indicator text-danger">*</span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control auto-select-dropdown"required id="Religion" name="Religion" tabindex="2">
+                                                                        <option value="3">Islam</option>
+                                                                        <option value="3">Hindu</option>
+                                                                        <option value="3">Christian</option>
+                                                                        <option value="3">Buddhist</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="className">Gender <span class="required-indicator text-danger">*</span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control auto-select-dropdown"required id="Gender" name="Gender" tabindex="2">
+                                                                        <option value="3">Male</option>
+                                                                        <option value="3">Female</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark " for="birthCertificateNo">Birth Certificate No <span class="required-indicator"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Birth Certificate No" id="birthCertificateNo" name="birthCertificateNo" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="className">Blood Group <span class="required-indicator text-danger">*</span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control auto-select-dropdown"required id="Blood Group" name="Blood Group" tabindex="2">
+                                                                        <option value="">Selec Blood Group</option>
+                                                                        <option value="3">A+</option>
+                                                                        <option value="3">B+-</option>
+                                                                        <option value="3">AB+</option>
+                                                                        <option value="3">O+</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="className">Nationality <span class="required-indicator text-danger">*</span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control auto-select-dropdown"required id="Nationality" name="Nationality" tabindex="2">
+                                                                        <option value="1">Bangladesh</option>
+                                                                        
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark for="email">Email</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Email Address" id="email" name="email" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark">Present Address <span class="required-indicator"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    <textarea placeholder="Present address" id="presentAddress" name="presentAddress" rows="3" class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3">
+                                                                <label class="col-sm-3 control-label text-dark">Permanent Address <span class="required-indicator"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    <textarea placeholder="Permanent address" id="permanentAddress" name="permanentAddress" rows="3" class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- end col -->
+                                                    </div>
+                                                    <!-- end row -->
+                                                </form>
+                                                <ul class="pager wizard mb-0 list-inline">
+                                                    <li class="previous list-inline-item">
+                                                        <button type="button" class="btn btn-dark"><i class="mdi mdi-arrow-left me-1"></i> Back</button>
+                                                    </li>
+                                                    <li class="next list-inline-item float-end">
+                                                        <button type="button" class="btn btn-info">Add More Info <i class="mdi mdi-arrow-right ms-1"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-pane" id="third">
+                                                <h6 class="smalltitle">
+                                                    <span class="bg-warning p-1 text-dark">FATHERS INFORMATION (MANDATORY)</span>
+                                                </h6>
+                                                <form id="adressForm" method="post" action="#" class="form-horizontal">
+                                                    <div class="row">
+                                                        <div class="col-12 ">
+                                                            <div class="row mb-2 mt-2 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="fathersName">Father Name<span class="required-indicator text-danger">* </span></label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Father Name" id="fathersName" name="fathersName" value="" class="form-control" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-2 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="fathersProfession">Profession<span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control" required id="fathersProfession" name="fathersProfession" tabindex="3">
+                                                                        <option value="">Select One...</option>
+                                                                        <option value="Assistant Professor/Professor">Assistant Professor/Professor</option>
+                                                                        <option value="Assistant Teacher/Teacher">Assistant Teacher/Teacher</option>
+                                                                        <option value="Banker">Banker</option>
+                                                                        <option value="Business Man">Business Man</option>
+                                                                        <option value="Day Labourer">Day Labourer</option>
+                                                                        <option value="Doctor">Doctor</option>
+                                                                        <option value="Driver">Driver</option>
+                                                                        <option value="Engineer">Engineer</option>
+                                                                        <option value="Farmer">Farmer</option>
+                                                                        <option value="Foreign Residence/Service Abroad">Foreign Residence/Service Abroad</option>
+                                                                        <option value="Govt. Service">Govt. Service</option>
+                                                                        <option value="Head Teacher">Head Teacher</option>
+                                                                        <option value="Housewife">Housewife</option>
+                                                                        <option value="Job Holder">Job Holder</option>
+                                                                        <option value="Journalist">Journalist</option>
+                                                                        <option value="Lawyer">Lawyer</option>
+                                                                        <option value="NGO Worker">NGO Worker</option>
+                                                                        <option value="Other">Other</option>
+                                                                        <option value="Physical Teacher">Physical Teacher</option>
+                                                                        <option value="Private/Non Govt. Service">Private/Non Govt. Service</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-2 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="mobile">Mobile No <span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    <input type="number" placeholder="Mobile Number" value="" id="mobile" name="mobile" class="form-control" required >
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-2 px-3">
+                                                                <label for="fathersIncome" class="col-sm-3 control-label text-dark">Monthly Average Income<span class="required-indicator text-danger">*</span> </label>
+                                                                <div class="col-md-9">
+                                                                    
+                                                                    <input type="number" name="fathersIncome" id="fathersIncome" value="" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                
+                                                            </div>
+                                                                <h6 class="smalltitle">
+                                                                    <span class="bg-warning p-1 text-dark">MOTHERS INFORMATION (MANDATORY)</span>
+                                                                </h6>
+                                                            <div class="row mb-2 mt-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="mothersName">Mother Name<span class="required-indicator text-danger">* </span></label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Mother Name" id="mothersName" name="mothersName" value="" class="form-control" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-2 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="motherProfession">Profession<span class="required-indicator text-danger">* </span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control" required id="motherProfession" name="motherProfession" tabindex="3">
+                                                                        <option value="">Select One...</option>
+                                                                        <option value="Assistant Professor/Professor">Assistant Professor/Professor</option>
+                                                                        <option value="Assistant Teacher/Teacher">Assistant Teacher/Teacher</option>
+                                                                        <option value="Banker">Banker</option>
+                                                                        <option value="Business Man">Business Man</option>
+                                                                        <option value="Day Labourer">Day Labourer</option>
+                                                                        <option value="Doctor">Doctor</option>
+                                                                        <option value="Driver">Driver</option>
+                                                                        <option value="Engineer">Engineer</option>
+                                                                        <option value="Farmer">Farmer</option>
+                                                                        <option value="Foreign Residence/Service Abroad">Foreign Residence/Service Abroad</option>
+                                                                        <option value="Govt. Service">Govt. Service</option>
+                                                                        <option value="Head Teacher">Head Teacher</option>
+                                                                        <option value="Housewife">Housewife</option>
+                                                                        <option value="Job Holder">Job Holder</option>
+                                                                        <option value="Journalist">Journalist</option>
+                                                                        <option value="Lawyer">Lawyer</option>
+                                                                        <option value="NGO Worker">NGO Worker</option>
+                                                                        <option value="Other">Other</option>
+                                                                        <option value="Physical Teacher">Physical Teacher</option>
+                                                                        <option value="Private/Non Govt. Service">Private/Non Govt. Service</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-2 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="mobile">Mobile No <span class="required-indicator text-danger"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    <input type="number" placeholder="Mobile Number" value="" id="mobile" name="mobile" class="form-control" >
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-2 px-3">
+                                                                <label for="fathersIncome" class="col-sm-3 control-label text-dark">Monthly Average Income<span class="required-indicator"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    
+                                                                    <input type="number" name="fathersIncome" id="fathersIncome" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+
+
+                                                            <h6 class="smalltitle">
+                                                                <span class="bg-warning p-1 text-dark">LEGAL GUARDIAN (IF ANY)</span>
+                                                            </h6>
+                                                            <div class="row mb-3 mt-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="guardianName">Guardian Name<span class="required-indicator"> </span></label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Guardian Name" id="guardianName" name="guardianName" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="fathersProfession">Profession<span class="required-indicator"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control" id="fathersProfession" name="fathersProfession" tabindex="3">
+                                                                        <option value="">Select One...</option>
+                                                                        <option value="Assistant Professor/Professor">Assistant Professor/Professor</option>
+                                                                        <option value="Assistant Teacher/Teacher">Assistant Teacher/Teacher</option>
+                                                                        <option value="Banker">Banker</option>
+                                                                        <option value="Business Man">Business Man</option>
+                                                                        <option value="Day Labourer">Day Labourer</option>
+                                                                        <option value="Doctor">Doctor</option>
+                                                                        <option value="Driver">Driver</option>
+                                                                        <option value="Engineer">Engineer</option>
+                                                                        <option value="Farmer">Farmer</option>
+                                                                        <option value="Foreign Residence/Service Abroad">Foreign Residence/Service Abroad</option>
+                                                                        <option value="Govt. Service">Govt. Service</option>
+                                                                        <option value="Head Teacher">Head Teacher</option>
+                                                                        <option value="Housewife">Housewife</option>
+                                                                        <option value="Job Holder">Job Holder</option>
+                                                                        <option value="Journalist">Journalist</option>
+                                                                        <option value="Lawyer">Lawyer</option>
+                                                                        <option value="NGO Worker">NGO Worker</option>
+                                                                        <option value="Other">Other</option>
+                                                                        <option value="Physical Teacher">Physical Teacher</option>
+                                                                        <option value="Private/Non Govt. Service">Private/Non Govt. Service</option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="mobile">Mobile No <span class="required-indicator"> </span> </label>
+                                                                <div class="col-md-9">
+                                                                    <input type="number" placeholder="Mobile Number" value="" id="mobile" name="mobile" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3 px-3">
+                                                                <label for="gRelation" class="col-sm-3 control-label text-dark">Relation With Guardian<span class="required-indicator"></span> </label>
+                                                                <div class="col-md-9">
+                                                                    
+                                                                    <input type="number" name="gRelation " id="gRelation" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                            <h6 class="smalltitle">
+                                                                <span class="bg-warning p-1 text-dark">PREVIOUS SCHOOL</span>
+                                                            </h6>
+                                                            <div class="row mb-3 mt-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="schoolName">Schools Name<span class="required-indicator"></span></label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="Schools Name" id="schoolName" name="schoolName" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3 mt-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="schoolName">Address<span class="required-indicator"></span></label>
+                                                                <div class="col-md-9">
+                                                                    <textarea placeholder="Present address" id="presentAddress" name="presentAddress" rows="2" class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="preSchoolClass">Previous Class</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" placeholder="PreviousClass" id="preSchoolClass" name="preSchoolClass" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mb-3 px-3">
+                                                                <label class="col-sm-3 control-label text-dark" for="preSchoolTcDate">TC Date</label>
+                                                                <div class="col-md-9">
+                                                                    
+                                                                    <input type="text" placeholder="TC Date" id="preSchoolTcDate" name="preSchoolTcDate" value="" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                    </div> <!-- end row -->
+                                                </form>
+                                                <ul class="pager wizard mb-0 list-inline">
+                                                    <li class="previous list-inline-item">
+                                                        <button type="button" class="btn btn-dark"><i class="mdi mdi-arrow-left me-1"></i> Back</button>
+                                                    </li>
+                                                    <li class="next list-inline-item float-end">
+                                                        <button type="button" class="btn btn-info">Add More Info <i class="mdi mdi-arrow-right ms-1"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-pane" id="fourth">
+                                                <form id="otherForm" method="post" action="#" class="form-horizontal">
+                                                    
+                                                    <h3 class="smalltitle">
+                                                        <span class="bg-warning p-1 text-dark">UPLOAD PHOTO</span>
+                                                    </h3>
+                                                  <div class="row mb-3 mt-3">
+                                                    
+                                                        <label class="control-label col-md-2 p-3 text-danger">Applicants Image <span class="required">*</span></label>
+    
+                                                        <div class="col-md-6 py-3 p-3">
+                                                            <input type="file" name="pImage" id="pImage" accept=".jpg,.png,.jpeg,.JPG,.PNG,.JPEG">
+                                                            <p>Miximum Size : 100KB, 300X300 px. Only png or jpeg file supported.</p>
+                                                       </div>
+    
+                                                       <div class="col-md-2 text-center">
+                                                        <img src="assets/img/student-photo.png" alt="avatar" id="ImagePreview" width="170px" height="140px" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                                                       </div>
+                                                    </div>
+                                                </form>
+
+                                                <ul class="pager wizard mb-0 list-inline">
+                                                    <li class="previous list-inline-item">
+                                                        <button type="button" class="btn btn-dark"><i class="mdi mdi-arrow-left me-1"></i> Back</button>
+                                                    </li>
+                                                    <li class="next list-inline-item float-end">
+                                                        <button type="button" class="btn btn-info">Submit <i class="mdi mdi-arrow-right ms-1"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="five">
+                                                
+                                                <div class="col-md-12">
+                                                    <h5 class="text-light p-2" style="background-color: #078cfa;">PERSONAL INFORMATION</h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Class</span><span class="text-dark fw-bolder"> Two</span> </p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Student Name</span><span class="text-dark fw-bolder"> Jannatul Ferdous Mou Anika </span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">নাম (বাংলা)</span><span class="text-dark fw-bolder"> জান্নাতুল ফেরদৌস মোউ আনিকা </span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Mobile No</span><span class="text-dark fw-bolder"> 01913162085</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Birth Date</span><span class="text-dark fw-bolder"> 22/02/2010</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Pre Address</span><span class=" text-dark fw-bolder"> Shyampur, Katakhali, Rajshahi</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Blood Group:</span> <span class="text-dark fw-bolder"> B+</span></p>
+                                                               
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Gender</span><span class="text-dark fw-bolder"> Male</span> </p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Religion</span> <span class="text-dark fw-bolder"> ISLAM</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Birth Certificate</span> <span class="text-dark fw-bolder"> 1020202020</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Nationality</span> <span class="text-dark fw-bolder"> Bangladeshi</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Email</span> <span class="text-dark fw-bolder"> shimulvisa@gmail.com</span></p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Perm. Address:</span> <span class="text-dark fw-bolder">Shyampur, Katakhali, Rajshahi</span></p>
+                                                            
+                                                           
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="text-center">
+                                                                
+                                                                    <img src="assets/img/student-photo.jpg" id="ImagePreview" width="200px" height="170px" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                                                                    <div class="caption">
+                                                                        <h5 class="text-danger">Form No: 2305530</h5>
+                                                                    </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="col-md-12">
+                                                    <h5 class="text-light p-2" style="background-color: #078cfa;">FATHER'S INFORMATION</h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Name</span><span class="text-dark fw-bolder"> Two</span> </p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Mobile No</span><span class="text-dark fw-bolder"> 01913162085 </span></p>
+                                                            
+                                                           
+                                                               
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 150px; background-color: #078cfa;">Monthly Avg. Income</span><span class="text-dark fw-bolder"> TK. 4000</span> </p>
+                                                 
+                                                        </div>
+                                                        
+                                                       <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Profession</span><span class="text-dark fw-bolder"> Teacher</span> </p>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <h5 class="text-light p-2" style="background-color: #078cfa;">MOTHER'S INFORMATION</h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Name</span><span class="text-dark fw-bolder"> Two</span> </p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Mobile No</span><span class="text-dark fw-bolder"> 01913162085 </span></p>
+       
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 150px; background-color: #078cfa;">Monthly Avg. Income</span><span class="text-dark fw-bolder"> TK. 4000</span> </p>
+   
+                                                        </div>
+                                                        
+                                                       <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Profession</span><span class="text-dark fw-bolder"> Teacher</span> </p>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <h5 class="text-light p-2" style="background-color: #078cfa;">LEGAL GUARDIAN</h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Name</span><span class="text-dark fw-bolder"> Abul Kalam Azad</span> </p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Profession</span><span class="text-dark fw-bolder"> Doctor </span></p>       
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Mobile No</span><span class="text-dark fw-bolder"> 01913162085</span> </p>  
+                                                        </div>
+                                                        
+                                                       <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 180px; background-color: #078cfa;">Relation With Guardian</span><span class="text-dark fw-bolder"> Brother</span> </p> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <h5 class="text-light p-2" style="background-color: #078cfa;">PREVIOUS SCHOOL INFORMATION</h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">School Name</span><span class="text-dark fw-bolder"> Two</span> </p>
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Address</span><span class="text-dark fw-bolder"> Shyampur Molla Para, Rajshahi </span></p>    
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">Previous Class</span><span class="text-dark fw-bolder"> Six</span> </p>
+                                                        </div>
+                                                        
+                                                       <div class="col-md-4">
+                                                            <p><span class="h-25 d-inline-block text-light p-1"style="width: 120px; background-color: #078cfa;">TC Date</span><span class="text-dark fw-bolder"> 20/08/2023</span> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="pager wizard mb-0 list-inline " style="margin-top: 80px;">
+                                                    <li class="previous list-inline-item">
+                                                        <button type="button" class=" btn btn-dark"><i class="mdi mdi-arrow-left me-1"></i> Back</button>
+                                                    </li>
+                                                    <li class="next list-inline-item float-end">
+                                                        <button type="button" class="btn btn-info">Confirm</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div> <!-- tab-content -->
+
+                                    </div> <!-- end #rootwizard-->
+                                </form>
+
+                            </div> <!-- end card-body -->
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+                </div> 
+                <!-- end row --> 
+            </div> <!-- container -->
+
+        <!-- START FOOTER -->
+        <footer class="bg-dark py-2" style="height: 100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mt-3">
+                            <p class="text-muted mt-4 text-center mb-0">© 2017-<script>document.write(new Date().getFullYear())</script> Powered By. Amarschool (Shool Management System)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+        
+        <!-- Bootstrap Wizard Form js -->
+        <script src="assets/vendor/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+        <!-- Wizard Form Demo js -->
+        <script src="assets/js/pages/demo.form-wizard.js"></script>
+        
+
+
+    </body>
+</html>

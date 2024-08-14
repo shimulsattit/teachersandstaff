@@ -1,0 +1,59 @@
+.feature-add-top {
+    display: inline-block;
+    background-color:rgb(255, 38, 4);
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px 7px;
+    position: absolute;
+    top: -20px;
+    left: 19px;
+    border: 2px solid #ff0404;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.feature-area {
+    position: relative;
+    padding: 18px 0;
+    border: 1px solid #ff0404;
+    border-radius: 8px;
+}
+
+a.text-hover-dark:hover {
+  color: red;
+}
+
+@media (max-width: 767px) {
+    .img-thumbnail {
+      width: 35px;
+    }
+  }
+ .upload-frame {
+  height: 300px;
+  width: 250px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.preview {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #ced4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.btn-submit {
+   margin-right: 10px;
+}
+
+.school-box {
+  font-family: 'Righteous', cursive;
+}

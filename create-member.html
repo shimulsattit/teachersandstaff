@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Landing Page | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Theme Config Js -->
+        <script src="assets/js/hyper-config.js"></script>
+
+        <!-- App css -->
+        <link href="assets/css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style" />
+
+        <!-- Icons css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="style-st-profile.css" rel="stylesheet" type="text/css" />
+
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg py-lg-1 navbar-light" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="container-fluid  col-sm-8">
+
+                <!-- logo -->
+                <a href="index.html" class="navbar-brand ">
+                    <img src="assets/images/logo.png" alt="logo" class="logo-dark" height="80" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+
+                <!-- menus -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <!-- left menu -->
+                    <ul class="navbar-nav me-auto align-items-center fw-bolder fs-4">
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link active" href="admission-intruction.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="online-admission-form.html">Apply</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="member-home.html">Member-Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="login-member.html">Login Member</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- right menu -->
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item ">
+                            <a href="login-member.html" target="_blank" class="nav-link d-lg-none">Purchase now</a>
+                            <a href="login-member.html" target="_blank" class="btn btn-sm btn btn-primary rounded-pill d-none d-lg-inline-flex">
+                                <i class="me-auto"></i>LOGIN
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        
+            <!--login page start-->
+            <div class="section-ptb">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+                      <div class="sign-form">
+                        <form class="form-group mb-0" action="h#" method="POST" autocomplete="off" enctype="multipart/form-data">
+                          <input type="hidden" name="_token" value="">
+                          <input name="id" type="hidden" value="">
+                          <small>অভিভাবক বা ছাত্র, ছাত্রীর নাম</small>
+                          <input class="form-control mb-25" type="text" name="member_name" required="" maxlength="99" placeholder="User Name">
+                          
+                          <small>যে মোবাইল নম্বরে SMS পাঠানো হবে </small>
+                          <input class="form-control mb-25" type="number" name="member_mobile" placeholder="Mobile Number" min="1" maxlength="11" required="">
+                          
+                          <small>কমপক্ষে ৬ এবং সর্বোচ্চ ১৩ সংখ্যার পাসওয়ার্ড দিন </small>
+                          <input class="form-control mb-25" type="password" name="password" placeholder="Password" min="6" max="13" required="">
+                          
+                          <input class="form-control" type="password" name="password_confirmation" placeholder="Confirm Password" min="6" max="13" required="">
+                          
+                          <div class=" py-2">
+                            By clicking "Create an account", you are agree to our <a href="policy.html">Terms of Use</a> &amp; <a href="policy.html">Privacy Policy.</a>
+                          </div>
+                          <button class="btn btn-primary w-100 mb-40 mt-3" type="submit">Create an account</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!--login page end-->
+
+        <!-- START FOOTER -->
+        <footer class="bg-dark py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mt-3">
+                            <p class="text-muted mt-4 text-center mb-0">© 2017-<script>document.write(new Date().getFullYear())</script> Powered By. Amarschool (Shool Management System)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+</html>
